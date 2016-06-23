@@ -52,8 +52,8 @@ int main(int argc, char** argv) {
 	std::vector<HGCSSGenParticle> * HadVec = 0;
 	tree->SetBranchAddress("HGCSSHadAction", &HadVec);
 
-	//std::vector<HGCSSGenParticle> * GenVec = 0;
-	//tree->SetBranchAddress("HGCSSGenAction", &GenVec);
+	///////std::vector<HGCSSGenParticle> * GenVec = 0;
+	///////tree->SetBranchAddress("HGCSSGenAction", &GenVec);
 
 	TFile hfile("analyzed_tuple.root", "RECREATE");
 	TTree t1("hadrons", "Hadron Study");
