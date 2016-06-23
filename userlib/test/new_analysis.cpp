@@ -31,7 +31,7 @@
 #include "HGCSSSimHit.hh"
 #include "HGCSSRecoHit.hh"
 #include "HGCSSGenParticle.hh"
-#include "HGCSSRecoJet.hh"asdf
+#include "HGCSSRecoJet.hh"
 #include "HGCSSCalibration.hh"
 #include "HGCSSDigitisation.hh"
 #include "HGCSSDetector.hh"
