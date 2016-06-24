@@ -46,14 +46,14 @@ int main(int argc, char** argv) {
 	TFile *infile = TFile::Open(argv[1]);
 	TTree *tree = (TTree*) infile->Get("HGCSSTree");
 
-	//std::vector<HGCSSEvent> * EventVec = 0;
-	//tree->SetBranchAddress("HGCSSEventVec", &EventVec);
+	std::vector<HGCSSEvent> * EventVec = 0;
+	tree->SetBranchAddress("HGCSSEventVec", &EventVec);
 
 	std::vector<HGCSSGenParticle> * HadVec = 0;
 	tree->SetBranchAddress("HGCSSHadAction", &HadVec);
 
-	//std::vector<HGCSSGenParticle> * GenVec = 0;
-	//tree->SetBranchAddress("HGCSSGenAction", &GenVec);
+	std::vector<HGCSSGenParticle> * GenVec = 0;
+	tree->SetBranchAddress("HGCSSGenAction", &GenVec);
 
 	TFile hfile("analyzed_tuple.root", "RECREATE");
 	TTree t1("hadrons", "Hadron Study");
